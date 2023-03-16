@@ -68,9 +68,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-
   background: #5436DA;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,13 +110,23 @@ body {
   display: none;
 }
 
+/* Navbar */
+
+.navbar {
+  height: 100px;
+}
+
+.navbar img {
+  height: 100%;
+  margin: 20px;
+}
+
 form {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
   background: #40414F;
-
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -128,9 +136,9 @@ textarea {
   width: 100%;
   color: #fff;
   font-size: 18px;
-  padding: 5px;
+  padding: 20px;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
   outline: none;
 }
