@@ -15,8 +15,8 @@ function loader(element) {
     if (element.textContent === '....') {
       element.textContent = '';
     }
-  }, 300);
-};
+  }, 300)
+}
 
 function typeText(element, text) {
   let index = 0;
@@ -25,11 +25,12 @@ function typeText(element, text) {
     if (index < text.length) {
       element.innerHTML += text.charAT(index);
       index++;
-    } else {
+    }
+    else {
       clearInterval(interval);
     }
-  }, 20);
-};
+  }, 20)
+}
 
 function generateUniqueId() {
   const timestamp = Date.now();
@@ -97,8 +98,6 @@ const handleSubmit = async (e) => {
   if (response.ok) {
     const data = await response.json();
     const parsedData = data.bot.trim(); // trims any trailing spaces/'\n' 
-
-    console.log({parsedData});
 
     typeText(messageDiv, parsedData);
   } else {
