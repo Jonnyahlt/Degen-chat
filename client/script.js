@@ -19,18 +19,18 @@ function loader(element) {
 }
 
 function typeText(element, text) {
-  let index = 0;
+  let index = 0
 
   let interval = setInterval(() => {
     if (index < text.length) {
-      element.innerHTML += text.charAT(index);
+      element.innerHTML += text.charAt(index);
       index++;
-    }
-    else {
+    } else {
       clearInterval(interval);
     }
   }, 20)
 }
+
 
 function generateUniqueId() {
   const timestamp = Date.now();
